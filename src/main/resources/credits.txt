@@ -1,0 +1,5 @@
+https://github.com/mrdoob/glsl-sandbox/blob/master/static/index.html
+http://glslsandbox.com/e
+https://www.lwjgl.org/guide
+http://forum.lwjgl.org/index.php?topic=6216.0
+https://www.shadertoy.com/view/4ljfRD
