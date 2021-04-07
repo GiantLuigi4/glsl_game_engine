@@ -6,9 +6,11 @@ uniform float time;
 uniform float frameTime;
 uniform vec2 dataResolution;
 uniform sampler2D backbuffer;
-uniform float keySpace;
+uniform float keySpaceA;
+uniform float mouseLeft;
 uniform float isFirstFrame;
 float firstFrame = isFirstFrame;
+float keySpace = max(keySpaceA, mouseLeft);
 
 vec4 fade(vec4 pos, float fade, float min) {
 	vec4 fragCol = texture2D(backbuffer, gl_FragCoord.xy / dataResolution.xy);

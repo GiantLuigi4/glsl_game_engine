@@ -76,14 +76,18 @@ public class GLSLWindow {
 				isDragging = true;
 				lastDragMouseX = mouseX;
 				lastDragMouseY = mouseY;
+				pressedKeys.add("mouse_left");
 			} else if (b == 0) {
 				isDragging = false;
+				pressedKeys.remove("mouse_left");
 			} else if (b == 1 && c == 1) {
 				isDragging2 = true;
 				lastDragMouse2X = mouseX;
 				lastDragMouse2Y = mouseY;
+				pressedKeys.add("mouse_right");
 			} else if (b == 1) {
 				isDragging2 = false;
+				pressedKeys.remove("mouse_right");
 			}
 		});
 		
